@@ -1,28 +1,40 @@
 import {
   ContainerCard,
+  ContainerTag,
   DescriptionCard,
   HeaderCard,
+  Tag,
   TittleAndNote,
 } from "./styled";
 import star from "../../assets/images/estrela.png";
 import { ButtonSubmit } from "../Button/styled";
 
 export type IRestaurantProps = {
-  //imgHeader : string
-  tittle: string;
-  note: string;
+  imgHeader: string;
+  title: string;
+  note: string | number;
   description: string;
-  tags: JSX.Element;
+  tags: string[];
 };
 
-const Restaurant = ({ tittle, note, description, tags }: IRestaurantProps) => (
+const Restaurant = ({
+  title,
+  note,
+  description,
+  tags,
+  imgHeader,
+}: IRestaurantProps) => (
   <>
     <ContainerCard>
-      <HeaderCard>
-        <span>{tags}</span>
+      <HeaderCard imageBackground={imgHeader}>
+        <ContainerTag>
+          {tags.map((tag, i) => {
+            return <Tag key={i}>{tag}</Tag>;
+          })}
+        </ContainerTag>
       </HeaderCard>
       <TittleAndNote>
-        <h2>{tittle}</h2>
+        <h2>{title}</h2>
         <div className="flex">
           <p>{note}</p>
           <img src={star} alt="star" />
