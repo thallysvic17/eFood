@@ -29,13 +29,3 @@ export const Container = styled.div`
     width: 100vw;
     height: auto;
 `
-
-export const ListContainer =styled.div`
-    width: 80%;
-    height: auto;
-    border: 1px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-`

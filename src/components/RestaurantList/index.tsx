@@ -1,4 +1,4 @@
-import { ListContainer } from "../../GlobalStyles";
+import { ListContainer } from './styles';
 import RestaurantModel from "../../Models/RestaurantModel";
 import Restaurant from "../Restaurant";
 
