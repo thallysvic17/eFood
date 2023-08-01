@@ -1,6 +1,5 @@
 import { ListContainer } from "../../GlobalStyles";
 import Restaurant from "../Restaurant";
-import Tag from "../tag";
 
 const data = [
   {

@@ -1,26 +1,19 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Container, GlobalCss} from "./GlobalStyles";
+import { BrowserRouter } from "react-router-dom";
+import { Container, GlobalCss } from "./GlobalStyles";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import RestaurantList from "./components/RestaurantList";
-
-
-const rotes = createBrowserRouter([
-  {
-    path : '/',
-    element: <>
-    </>
-  }
-])
+import RoutesWeb from "./Routes/routesweb";
 
 function App() {
   return (
-    <Container>
-      <GlobalCss />
-      <Hero />
-      <RestaurantList/>
-      <Footer/>
-    </Container>
+    <BrowserRouter>
+      <Container>
+        <GlobalCss />
+        <Hero />
+        <RoutesWeb />
+        <Footer />
+      </Container>
+    </BrowserRouter>
   );
 }
 
