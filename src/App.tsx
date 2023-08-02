@@ -10,7 +10,7 @@ function App() {
       <Container>
         <GlobalCss />
         <Hero />
-        <RoutesWeb />
+          <RoutesWeb />
         <Footer />
       </Container>
     </BrowserRouter>
