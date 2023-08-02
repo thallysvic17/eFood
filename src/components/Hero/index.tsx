@@ -1,5 +1,6 @@
 import { Banner, BannerInfos, ContentHero, Logo, Title } from "./styles";
 import logo from "../../assets/images/logo.png";
+import { Link } from "react-router-dom";
 
 interface IheroProps {
   page?: "home" | "about";
@@ -23,9 +24,9 @@ const Hero = ({ page }: IheroProps) => {
     return (
       <ContentHero>
         <Logo>
-          <button>Restaurante</button>
+          <Link to="/"><a>Restaurante</a></Link>
           <img src={logo} alt="efood" />
-          <p>0 produto(s) no carrinho</p>
+          <Link to="/"><p>0 produto(s) no carrinho</p></Link>
         </Logo>
         <Banner>
           <BannerInfos>
