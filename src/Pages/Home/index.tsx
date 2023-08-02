@@ -1,3 +1,4 @@
+import Hero from "../../components/Hero";
 import RestaurantList from "../../components/RestaurantList";
 
 const data = [
@@ -65,6 +66,7 @@ const data = [
 
 const Home = () => (
   <>
+     <Hero  page="home"/>
     <RestaurantList restaurants={data} />
   </>
 );

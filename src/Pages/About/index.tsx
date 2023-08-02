@@ -1,5 +1,6 @@
 import { Container } from "../../GlobalStyles";
 import AboutList from "../../components/AboutList";
+import Hero from "../../components/Hero";
 
 const data = [
   {
@@ -43,6 +44,7 @@ const data = [
 const About = () => (
   <>
     <Container>
+      <Hero page="about" />
       <AboutList Cards={data} />
     </Container>
   </>

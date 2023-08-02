@@ -9,8 +9,7 @@ function App() {
     <BrowserRouter>
       <Container>
         <GlobalCss />
-        <Hero />
-          <RoutesWeb />
+        <RoutesWeb />
         <Footer />
       </Container>
     </BrowserRouter>
