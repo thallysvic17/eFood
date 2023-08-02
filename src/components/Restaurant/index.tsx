@@ -8,11 +8,12 @@ import {
 } from "./styled";
 import star from "../../assets/images/estrela.png";
 import { ButtonSubmit } from "../Button/styled";
+import { Link } from "react-router-dom";
 
 export type IRestaurantProps = {
   imgHeader: string;
   title: string;
-  note: string | number;
+  note?: string | number;
   description: string;
   tags: string[];
 };
@@ -40,8 +41,10 @@ const Restaurant = ({
           <img src={star} alt="star" />
         </div>
       </TittleAndNote>
-      <DescriptionCard>{description}</DescriptionCard>
-      <ButtonSubmit size="small">Saiba mais</ButtonSubmit>
+      <DescriptionCard page="home">{description}</DescriptionCard>
+      <Link to="/sobre">
+        <ButtonSubmit size="small">Saiba mais</ButtonSubmit>
+      </Link>
     </ContainerCard>
   </>
 );

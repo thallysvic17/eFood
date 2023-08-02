@@ -2,7 +2,7 @@ class RestaurantModel {
   id: number;
   imgHeader: string;
   title: string;
-  note: string | number;
+  note?: string | number;
   description: string;
   tags: string[];
 

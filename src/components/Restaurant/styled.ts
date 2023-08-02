@@ -3,8 +3,9 @@ import ImageCard from "../../assets/images/sushi.png";
 
 import { colors } from "../../GlobalStyles";
 
-interface IHeaderCardProps {
+ export interface IHeaderCardProps {
   imageBackground?: string;
+  page?: 'home' | 'about'
 }
 
 export const ContainerCard = styled.div`
@@ -51,10 +52,11 @@ export const TittleAndNote = styled.div`
   }
 `;
 
-export const DescriptionCard = styled.p`
+export const DescriptionCard = styled.p<IHeaderCardProps>`
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   padding-bottom: 10px;
   margin-left: 5px;
+  color: ${props => props.page === 'home' ?colors.tittleSections : colors.background};
 `;

@@ -59,7 +59,7 @@ const dataContent = [
 
 const About = () => (
   <>
-    <RestaurantList restaurants={dataContent}/>
+    <RestaurantList restaurants={dataContent} />
   </>
 );
 
