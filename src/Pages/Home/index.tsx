@@ -1,3 +1,4 @@
+import { Container } from "../../GlobalStyles";
 import Hero from "../../components/Hero";
 import RestaurantList from "../../components/RestaurantList";
 
@@ -59,9 +60,9 @@ const data = [
 ];
 
 const Home = () => (
-  <>
+  <Container>
     <Hero page="home" />
     <RestaurantList restaurants={data} />
-  </>
+  </Container>
 );
 export default Home;

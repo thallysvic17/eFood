@@ -11,7 +11,7 @@ interface ICardProps {
 export const Card = styled.div`
   width: 320px;
   height: 338px;
-  background-color: ${colors.tags};
+  background-color: ${colors.tittleSections};
   padding-top: 8px;
   display: flex;
   flex-direction: column;

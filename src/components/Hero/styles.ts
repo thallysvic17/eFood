@@ -23,7 +23,7 @@ export const Logo = styled.div`
 
   a {
     text-decoration: none;
-    color: ${colors.tags};
+    color: ${colors.tittleSections};
     font-size: 18px;
     font-weight: 900;
     line-height: 21px;

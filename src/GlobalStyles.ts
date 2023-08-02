@@ -5,8 +5,6 @@ import styled, { createGlobalStyle } from "styled-components";
 export const colors = { 
     background : '#FFEBD9',
     tittleSections : '#E66767',
-    tags : '#E66767',
-    hero : '#FFEBD9',
     white: '#fff'
 }
 
@@ -23,7 +21,6 @@ export const GlobalCss = createGlobalStyle`
         background-color: ${colors.white};
         color: ${colors.tittleSections};
     }
-
 `
 
 export const Container = styled.div`
