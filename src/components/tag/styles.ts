@@ -3,7 +3,7 @@ import {Props} from '.'
 import { colors } from "../../GlobalStyles"
 
 export const TagContainer = styled.div<Props>`
-    background-color: ${colors.tags};
+    background-color: ${colors.tittleSections};
     color: ${colors.white};
     font-size: 12px;
     font-weight: 700;

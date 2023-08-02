@@ -9,7 +9,7 @@ import { colors } from "../../GlobalStyles";
 export const ContainerCard = styled.div`
   width: 472px;
   height: 398px;
-  border: 1px solid ${colors.tags};
+  border: 1px solid ${colors.tittleSections};
   margin: 100px 0;
 `;
 
@@ -27,7 +27,7 @@ export const ContainerTag = styled.div`
 export const Tag = styled.span`
   display: flex;
   padding: 8px 8px;
-  background: ${colors.tags};
+  background: ${colors.tittleSections};
   margin: 8px;
   color: ${colors.background};
 `;
