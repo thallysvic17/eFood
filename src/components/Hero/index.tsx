@@ -1,7 +1,6 @@
 import { ContentHero, Logo, Title } from "./styles"
 import logo from '../../assets/images/logo.png'
 
-
 const Hero = () => (
     <ContentHero>
         <Logo>

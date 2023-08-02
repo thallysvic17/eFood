@@ -1,65 +1,50 @@
-import RestaurantList from "../../components/RestaurantList";
+import { Container } from "../../GlobalStyles";
+import AboutList from "../../components/AboutList";
 
-const dataContent = [
+const data = [
   {
-    id: 1,
-    tags: [],
-    title: "Pizza Marguerita ",
+    id: 7,
+    title: "Pizza Marguerita",
     description:
-      "a clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    imgHeader:
-      "https://img.freepik.com/fotos-gratis/paisagem-tropical-ensolarada_23-2150466878.jpg",
+      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
   },
   {
-    id: 2,
-    tags: [],
-    title: "Pizza Marguerita ",
+    id: 8,
+    title: "Pizza Marguerita",
     description:
-      "a clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    imgHeader:
-      "https://img.freepik.com/fotos-gratis/paisagem-tropical-ensolarada_23-2150466878.jpg",
+      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
   },
   {
-    id: 3,
-    tags: ["destaque da semana", "sushi"],
-    title: "Pizza Marguerita ",
+    id: 9,
+    title: "Pizza Marguerita",
     description:
-      "a clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    imgHeader:
-      "https://img.freepik.com/fotos-gratis/paisagem-tropical-ensolarada_23-2150466878.jpg",
+      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
   },
   {
-    id: 4,
-    tags: ["destaque da semana", "sushi"],
-    title: "Pizza Marguerita ",
+    id: 10,
+    title: "Pizza Marguerita",
     description:
-      "a clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    imgHeader:
-      "https://img.freepik.com/fotos-gratis/paisagem-tropical-ensolarada_23-2150466878.jpg",
+      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
   },
   {
-    id: 5,
-    tags: ["destaque da semana", "sushi"],
-    title: "Pizza Marguerita ",
+    id: 11,
+    title: "Pizza Marguerita",
     description:
-      "a clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    imgHeader:
-      "https://img.freepik.com/fotos-gratis/paisagem-tropical-ensolarada_23-2150466878.jpg",
+      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
   },
   {
-    id: 6,
-    tags: ["destaque da semana", "sushi"],
-    title: "Pizza Marguerita ",
+    id: 12,
+    title: "Pizza Marguerita",
     description:
-      "a clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    imgHeader:
-      "https://img.freepik.com/fotos-gratis/paisagem-tropical-ensolarada_23-2150466878.jpg",
+      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
   },
 ];
 
 const About = () => (
   <>
-    <RestaurantList restaurants={dataContent} />
+    <Container>
+      <AboutList Cards={data} />
+    </Container>
   </>
 );
 

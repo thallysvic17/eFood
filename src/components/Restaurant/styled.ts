@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 import ImageCard from "../../assets/images/sushi.png";
-
 import { colors } from "../../GlobalStyles";
 
  export interface IHeaderCardProps {
@@ -16,7 +15,7 @@ export const ContainerCard = styled.div`
 `;
 
 export const HeaderCard = styled.div<IHeaderCardProps>`
-  background-image: url(${({ imageBackground }) => imageBackground ? imageBackground : ImageCard});
+  background-image: url(${ ImageCard});
   width: 100%;
   height: 217px;
 `;
