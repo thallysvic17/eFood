@@ -5,7 +5,7 @@ import About from "../Pages/About";
 const RoutesWeb = () => (
   <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="/sobre" element={<About/>} />
+    <Route path="/sobre/:id" element={<About/>} />
   </Routes>
 );
 

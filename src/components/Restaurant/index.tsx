@@ -16,6 +16,7 @@ export type IRestaurantProps = {
   note?: string | number;
   description: string;
   tags: string[];
+  id: number
 };
 
 const Restaurant = ({
@@ -24,6 +25,7 @@ const Restaurant = ({
   description,
   tags,
   imgHeader,
+  id
 }: IRestaurantProps) => (
   <>
     <ContainerCard>
@@ -42,8 +44,8 @@ const Restaurant = ({
         </div>
       </TittleAndNote>
       <DescriptionCard page="home">{description}</DescriptionCard>
-      <Link to="/sobre">
-        <ButtonSubmit size="small">Saiba mais</ButtonSubmit>
+      <Link to={`/sobre/${id}`}>
+        <ButtonSubmit size="small" >Saiba mais</ButtonSubmit>
       </Link>
     </ContainerCard>
   </>

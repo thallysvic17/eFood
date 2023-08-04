@@ -14,6 +14,7 @@ const RestaurantList = ({restaurants}:Props) => (
       return (
         <Restaurant
           key={item.id}
+          id={item.id}
           imgHeader={item.imgHeader}
           tags={item.tags}
           title={item.title}

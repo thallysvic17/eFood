@@ -1,53 +1,41 @@
 import { Container, colors } from "../../GlobalStyles";
 import AboutList from "../../components/AboutList";
 import Hero from "../../components/Hero";
+import { dataMock } from "../../Mock/base";
+import { useParams } from "react-router-dom";
 
-const data = [
-  {
-    id: 7,
-    title: "Pizza Marguerita",
-    description:
-      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-  },
-  {
-    id: 8,
-    title: "Pizza Marguerita",
-    description:
-      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-  },
-  {
-    id: 9,
-    title: "Pizza Marguerita",
-    description:
-      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-  },
-  {
-    id: 10,
-    title: "Pizza Marguerita",
-    description:
-      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-  },
-  {
-    id: 11,
-    title: "Pizza Marguerita",
-    description:
-      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-  },
-  {
-    id: 12,
-    title: "Pizza Marguerita",
-    description:
-      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-  },
-];
 
-const About = () => (
-  <>
-    <Container style={{backgroundColor: colors.background}}>
-      <Hero page="about" />
-      <AboutList Cards={data} />
-    </Container>
-  </>
-);
+export interface about {
+  id: number, 
+  title: string, 
+  description: string
+}
+
+const About = () => {
+
+  const { id } = useParams();
+
+let data: about[] = []
+if(id !== null && id !== undefined) {
+   const about = dataMock.find(a => a.id.toString() === id.toString());
+   if(about)
+       data = about.products
+}
+
+  console.log(data);
+
+  // 1 recuperar o id  //feito
+  // 2 buscar no mock os produtos referente ao id especifico //feito
+  //3 listar os produtos // feito
+
+  return (
+    <>
+      <Container style={{ backgroundColor: colors.background }}>
+        <Hero page="about" />
+        <AboutList Cards={data} />
+      </Container>
+    </>
+  );
+};
 
 export default About;
