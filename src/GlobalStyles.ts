@@ -20,10 +20,14 @@ export const GlobalCss = createGlobalStyle`
     body{
         background-color: ${colors.white};
         color: ${colors.tittleSections};
+        width: 100vw;
+        overflow-x: hidden;
+
     }
 `
 
 export const Container = styled.div`
-    width: 100vw;
-    height: auto;
+            width: 80vw;
+            height: auto;
+            margin: 0 auto;
 `

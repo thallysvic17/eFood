@@ -1,4 +1,4 @@
-import { Container, colors } from "../../GlobalStyles";
+import {  Container, colors } from "../../GlobalStyles";
 import AboutList from "../../components/AboutList";
 import Hero from "../../components/Hero";
 import { dataMock } from "../../Mock/base";
@@ -30,10 +30,12 @@ if(id !== null && id !== undefined) {
 
   return (
     <>
-      <Container style={{ backgroundColor: colors.background }}>
+      <div style={{ backgroundColor: colors.background }}>
         <Hero page="about" />
-        <AboutList Cards={data} />
-      </Container>
+        <Container>
+         <AboutList Cards={data} />
+        </Container>
+      </div>
     </>
   );
 };

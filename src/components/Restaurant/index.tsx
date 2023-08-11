@@ -45,7 +45,7 @@ const Restaurant = ({
       </TittleAndNote>
       <DescriptionCard page="home">{description}</DescriptionCard>
       <Link to={`/sobre/${id}`}>
-        <ButtonSubmit size="small" >Saiba mais</ButtonSubmit>
+        <ButtonSubmit size="small">Saiba mais</ButtonSubmit>
       </Link>
     </ContainerCard>
   </>
